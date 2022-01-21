@@ -1,0 +1,263 @@
+body {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #fff;
+  height: 200vh;
+  position: relative; }
+  body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1; }
+  body.offcanvas-menu:before {
+    opacity: 1;
+    z-index: 1002;
+    visibility: visible; }
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 0px 0; }
+  @media (min-width: 768px) {
+    header {
+      padding: 30px 0; } }
+  header .navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 800;
+    font-size: 2rem; }
+    header .navbar-brand.absolute {
+      position: absolute; }
+      @media (max-width: 991.98px) {
+        header .navbar-brand.absolute {
+          position: relative; } }
+    header .navbar-brand span {
+      color: #fff; }
+      @media (min-width: 768px) {
+        header .navbar-brand span {
+          color: #ced4da; } }
+  header .navbar {
+    background: black !important;
+    padding-top: .5rem;
+    padding-bottom: .5rem; }
+    @media (min-width: 768px) {
+      header .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        background: none !important;
+        position: relative; } }
+    header .navbar .nav-link {
+      padding: 1.7rem 1rem;
+      outline: none !important;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.8) !important; }
+      @media (max-width: 1199.98px) {
+        header .navbar .nav-link {
+          padding: .5rem 0rem; } }
+      header .navbar .nav-link.active {
+        color: #fff !important; }
+    header .navbar .dropdown-menu {
+      font-size: 14px;
+      border-radius: 4px;
+      border: none;
+      -webkit-box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
+      min-width: 13em;
+      margin-top: -10px; }
+      header .navbar .dropdown-menu:before {
+        bottom: 100%;
+        left: 10%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: #fff;
+        border-width: 7px; }
+        @media (max-width: 991.98px) {
+          header .navbar .dropdown-menu:before {
+            display: none; } }
+      header .navbar .dropdown-menu .dropdown-item:hover {
+        background: #007bff;
+        color: #fff; }
+      header .navbar .dropdown-menu .dropdown-item.active {
+        background: #007bff;
+        color: #fff; }
+      header .navbar .dropdown-menu a {
+        padding-top: 7px;
+        padding-bottom: 7px; }
+    header .navbar .cta-btn a {
+      background: #007bff;
+      color: #fff !important;
+      text-transform: uppercase;
+      font-size: .8rem;
+      padding: 15px 20px !important;
+      line-height: 1;
+      font-weight: bold;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+      header .navbar .cta-btn a:hover {
+        background: #fff;
+        color: #007bff !important;
+        -webkit-box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2); }
+
+/*footer*/
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  height: 70vh; }
+
+.footer-32892 {
+  background-color: #202126;
+  padding: 7rem 0;
+  color: #888;
+  font-size: 16px; }
+  .footer-32892, .footer-32892 h3 {
+    font-family: "Poppins", sans-serif; }
+  .footer-32892 h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px; }
+  .footer-32892 p {
+    font-family: "Source Serif Pro", serif; }
+  .footer-32892 .row.gallery {
+    margin-right: -5px;
+    margin-left: -5px; }
+    .footer-32892 .row.gallery > [class^="col-"],
+    .footer-32892 .row.gallery > [class*=" col-"] {
+      padding-right: 5px;
+      padding-left: 5px; }
+  .footer-32892 .gallery a {
+    display: block;
+    margin-bottom: 10px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    .footer-32892 .gallery a:hover {
+      opacity: .5; }
+  .footer-32892 .quick-info li {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px; }
+    .footer-32892 .quick-info li a {
+      color: #fff; }
+    .footer-32892 .quick-info li .icon {
+      font-size: 20px;
+      color: #f88020; }
+  .footer-32892 .subscribe {
+    position: relative; }
+    .footer-32892 .subscribe .form-control {
+      background-color: #292b31;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-radius: 30px;
+      height: 55px;
+      padding-left: 30px;
+      padding-right: 130px;
+      border: none;
+      color: #fff; }
+      .footer-32892 .subscribe .form-control::-webkit-input-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+      .footer-32892 .subscribe .form-control::-moz-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+      .footer-32892 .subscribe .form-control:-ms-input-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+      .footer-32892 .subscribe .form-control:-moz-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+    .footer-32892 .subscribe .btn-submit {
+      background: #f88020;
+      height: 47px;
+      border-radius: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: #fff;
+      font-weight: bold;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+  .footer-32892 .tweets li {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: "Source Serif Pro", serif; }
+    .footer-32892 .tweets li span {
+      color: #fff; }
+  .footer-32892 .footer-menu-wrap {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem !important;
+    margin-top: 7rem; }
+  .footer-32892 .footer-menu {
+    margin-bottom: 0; }
+    .footer-32892 .footer-menu li {
+      display: inline-block; }
+      @media (max-width: 767.98px) {
+        .footer-32892 .footer-menu li {
+          display: block; } }
+      .footer-32892 .footer-menu li a {
+        padding: 10px;
+        display: inline-block;
+        color: #fff; }
+        @media (max-width: 767.98px) {
+          .footer-32892 .footer-menu li a {
+            display: block;
+            padding-left: 0px; } }
+      .footer-32892 .footer-menu li:first-child a {
+        padding-left: 0; }
+  .footer-32892 .site-logo {
+    color: #fff;
+    font-size: 20px; }
